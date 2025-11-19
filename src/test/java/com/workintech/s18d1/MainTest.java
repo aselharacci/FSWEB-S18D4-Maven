@@ -168,7 +168,7 @@ class MainTest {
     @Test
     void testBurgerErrorResponse() {
         String expectedMessage = "An error occurred";
-        BurgerErrorResponse errorResponse = new BurgerErrorResponse(expectedMessage);
+        var errorResponse = new BurgerErrorResponse(expectedMessage);
 
         assertEquals(expectedMessage, errorResponse.getMessage(), "The retrieved message should match the expected message.");
     }

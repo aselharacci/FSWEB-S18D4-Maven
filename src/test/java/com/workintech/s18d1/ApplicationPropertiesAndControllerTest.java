@@ -34,7 +34,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
 
-@WebMvcTest(controllers = {BurgerController.class, GlobalExceptionHandler.class,ApplicationPropertiesAndControllerTest.class})
+@WebMvcTest(BurgerController.class)
 @ExtendWith(ResultAnalyzer.class)
 class ApplicationPropertiesAndControllerTest {
 
